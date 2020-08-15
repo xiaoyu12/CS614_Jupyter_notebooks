@@ -1,0 +1,28 @@
+digraph {
+   graph [nodesep=2, size="10,10"];
+    N0 [shape="box", style="rounded", label="000"];
+    N1 [shape="box", style="rounded", label="001"];
+    N2 [shape="box", style="rounded", label="010"];
+    N3 [shape="box", style="rounded", label="011"];
+    N4 [shape="box", style="rounded", label="100"];
+    N5 [shape="box", style="rounded", label="101"];
+    N6 [shape="box", style="rounded", label="110"];
+    N7 [shape="box", style="rounded", label="111"];
+    N0 -> N0 [label="0000"];
+    N0 -> N1 [label="0001"];
+    N1 -> N2 [label="0010"];
+    N1 -> N3 [label="0011"];
+    N2 -> N4 [label="0100"];
+    N2 -> N5 [label="0101"];
+    N3 -> N6 [label="0110"];
+    N3 -> N7 [label="0111"];
+    N4 -> N0 [label="1000"];
+    N4 -> N1 [label="1001"];
+    N5 -> N2 [label="1010"];
+    N5 -> N3 [label="1011"];
+    N6 -> N4 [label="1100"];
+    N6 -> N5 [label="1101"];
+    N7 -> N6 [label="1110"];
+    N7 -> N7 [label="1111"];
+    overlap=false;
+}
